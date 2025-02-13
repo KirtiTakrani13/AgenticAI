@@ -13,7 +13,7 @@ openai.api_key=os.getenv("OPENAI_API_KEY")
 web_search_agent=Agent(
     name="Web Search Agent",
     role="Search the web for the information",
-    model=Groq(id="llama-3.3-70b-versatile	"),
+    model=Groq(id="llama-3.3-70b-versatile"),
     tools=[DuckDuckGo()],
     instructions=["Alway include sources"],
     show_tools_calls=True,
@@ -42,5 +42,5 @@ multi_ai_agent=Agent(
     markdown=True,
 )
 
-multi_ai_agent.print_response("Hey **Kirti**, \nHere's your summarized analyst recommendation and the latest news for NVDA.", stream=True)
+multi_ai_agent.print_response("Hey **Kirti**, \n Here's your summarized analyst recommendation and the latest news for NVDA.", stream=True)
 
